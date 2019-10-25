@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            height: 80px;
+
+        }
+
+        .header-c {
+            position: relative;
+            width: 1200px;
+            height: 100%;
+            background-color: orange;
+            margin: 0 auto;
+        }
+
+        .header .nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .header .nav-item {
+            position: relative;
+            float: left;
+            height: 100%;
+            line-height: 80px;
+            text-align: center;
+            margin-right: 40px;
+        }
+
+        .header .nav-item.mr0 {
+            margin-right: 0;
+        }
+
+        .header .nav-item a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+
+        .header .nav-item span {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            /* display: none; */
+            width: 0;
+            height: 2px;
+            background-color: #333;
+            transition: all ease .4s;
+        }
+
+        /* 模拟鼠标进入的样式 */
+        .header .nav-item:hover span {
+            /* display: block; */
+            width: 100%;
+        }
+
+        .header .nav-item:hover>a {
+            color: red;
+        }
+
+        /* 设置 激活位 */
+        .header .nav-item.active span {
+            width: 100%;
+        }
+
+        .header .nav-item.active a {
+            color: red;
+        }
+
+        /* 设置二级导航 */
+        .header .sub-nav {
+            position: absolute;
+            left: 0;
+            top: 70px;
+            display: none;
+            width: 100%;
+        }
+
+        .header .sub-nav-item {
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            background-color: green;
+        }
+
+        .header .nav-item:hover .sub-nav {
+            display: block;
+        }
+
+        /* 子导航 hover 效果 */
+        .header .sub-nav-item:hover>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-c">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#">首页</a>
+                    <span></span>
+                </li>
+                <li class="nav-item active">
+                    <a href="#">关于我们</a>
+                    <span></span>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#">新闻活动</a>
+                    <span></span>
+                    <!-- 二级导航 -->
+                    <ul class="sub-nav">
+                        <li class="sub-nav-item">
+                            <a href="#">子导航1</a>
+                        </li>
+                        <li class="sub-nav-item">
+                            <a href="#">子导航2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item mr0">
+                    <a href="#">最新动态</a>
+                    <span></span>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1000px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .inner-box {
+            /* position: absolute; */
+            width: 100px;
+            height: 40px;
+            background-color: green;
+            /* text-align: center; */
+            margin: 0 auto;
+            /* 过渡效果 */
+            transition: all ease .4s;
+        }
+
+        /* 指定一个开始状态 , */
+        /* 在某些条件下,制定了结束状态 */
+        /* 再给元素添加transition 属性 */
+        /* 这样就实现了过渡效果 */
+        .box:hover .inner-box {
+            width: 50%;
+        }
+
+        .zx {
+            position: fixed;
+            right: 0;
+            bottom: 100px;
+            width: 60px;
+            height: 60px;
+            background-color: green;
+        }
+
+        .zx .block {
+            position: absolute;
+            right: -100px;
+            bottom: 0;
+            width: 100px;
+            height: 200px;
+            background-color: orange;
+            transition: all ease .4s;
+        }
+
+        .zx:hover .block {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner-box">
+
+            不凡学院
+        </div>
+    </div>
+    <div class="zx">
+        <div class="block">
+
+        </div>
+    </div>
+</body>
+
+</html>

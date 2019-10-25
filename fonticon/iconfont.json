@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8065275",
+      "name": "draw",
+      "font_class": "draw",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "8776692",
+      "name": "message",
+      "font_class": "icon-test",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "8776715",
+      "name": "time",
+      "font_class": "icon-test1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "10798558",
+      "name": "我的证明",
+      "font_class": "wodezhengming",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "10799222",
+      "name": "专属客服",
+      "font_class": "zhuanshukefu",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "10885067",
+      "name": "工牌",
+      "font_class": "gongpai",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10885821",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "10906513",
+      "name": "通知",
+      "font_class": "tongzhi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}

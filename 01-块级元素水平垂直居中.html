@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            background-color: rgb(83, 69, 69);
+            overflow: hidden;
+        }
+
+        .inner-box {
+            /* width: 200px; */
+            /* height: 200px; */
+            background-color: green;
+            /* 定位解决 */
+
+            /* 盒子宽高已知 */
+            /* 相对于父盒子的 宽度 和 高度 */
+            /* 往回移东自身的一半 */
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+            margin-left: -100px; */
+            /* 这里的50%  是相对于父类宽度的 50% */
+            /* margin-left: -50%; 400px */
+
+
+
+            /* 盒子宽高未知 */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* translate设置位移多少 */
+            /* 第一个值 水平方向 */
+            /* 第二个值  垂直方向 */
+            /* 这里的50% ,是 这个元素自身的 50% */
+            transform: translate(-50%, -50%);
+
+            /* margin: 0 auto;
+            margin-top: 100px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner-box">
+            不凡学院
+        </div>
+    </div>
+</body>
+
+</html>
